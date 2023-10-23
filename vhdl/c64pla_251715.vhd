@@ -126,7 +126,11 @@ begin
 	begin
 		-- default initializations
 		vic <= '1';
+		ide <= '1';
 		sid <= '1';
+		sid2 <= '1';
+		acia <= '1';
+		rtc <= '1';
 		cia1 <= '1';
 		cia2 <= '1';
 		io1Buffer <= '1';
@@ -157,6 +161,7 @@ begin
 						    vic <= '0';
 							when "01" =>
 							  ide <= '0';
+						end case;
 					-- $d400
 					when "01" =>
 					  case a(9 downto 8) is
@@ -168,6 +173,7 @@ begin
 								acia <= '0';
 							when "10" =>
 								rtc <= '0';
+							end case;
 					-- $d800
 					when "10" =>
 						colram <= '0';
