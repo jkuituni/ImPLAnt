@@ -169,9 +169,9 @@ begin
 							  sid <= '0';
 							when "01" =>
 							  sid2 <= '0';
-							when "01" =>
-								acia <= '0';
 							when "10" =>
+								acia <= '0';
+							when "11" =>
 								rtc <= '0';
 							end case;
 					-- $d800
