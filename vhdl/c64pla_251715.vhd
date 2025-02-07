@@ -256,7 +256,7 @@ begin
 	casram <= misc3;
 
 	-- map some interesting signals to the auxiliary lines
-	aux <= a(7 downto 0);
+	-- aux <= a(7 downto 0);
 
 	-- map clock
 	clk <= phi0;
